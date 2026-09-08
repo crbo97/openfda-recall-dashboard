@@ -1,0 +1,9 @@
+figure,file_name,purpose,source_stage,analysis_unit,denominator,png_exists,pdf_exists,png_bytes,pdf_bytes,png_height_pixels,png_width_pixels,nonblank_pixel_check
+16.01,figure_16_01_topic_prevalence,Show the most prevalent substantive failure-pattern topics.,Metadata Analysis,Product recall record,All topic-bearing recall records,True,True,358280,22941,2359,3262,True
+16.02,figure_16_02_temporal_prevalence,Show annual prevalence trajectories for six major topics.,Temporal Analysis,Product recall record,Topic-bearing recall records within each year,True,True,564628,24147,2059,3555,True
+16.03,figure_16_03_temporal_change,Compare the strongest supported increases and decreases.,Temporal Analysis,Product recall record,Topic-bearing recall records within each period,True,True,306309,23453,2359,3549,True
+16.04,figure_16_04_topics_by_device_class,Compare topic composition across standard device classes.,Metadata Analysis,Product recall record,Recall records within each device class,True,True,332939,47308,2659,3187,True
+16.05,figure_16_05_firm_topic_profiles,Compare topic profiles across twelve major recalling firms.,Metadata Analysis,Product recall record,Recall records within each firm,True,True,432899,66945,2662,4420,True
+16.06,figure_16_06_complex_narratives_temporal,Show annual prevalence of complex or unassigned narratives.,Temporal Analysis,Product recall record,Topic-bearing recall records within each year,True,True,170275,17811,1459,2960,True
+16.07,figure_16_07_record_event_sensitivity,Compare record- and event-weighted prevalence for the most sensitive supported topic.,Temporal Analysis,Record and recall event,Records or unique events within each year,True,True,243469,18872,1758,2960,True
+16.08,figure_16_08_semantic_topic_map,Show a qualitative two-dimensional projection of final document topics.,BERTopic Analysis,Unique semantic narrative,Not applicable - semantic projection,True,True,1348312,1056989,2659,3260,True

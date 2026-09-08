@@ -1,0 +1,60 @@
+{
+  "created_at_utc": "2026-09-06T17:10:21.745076+00:00",
+  "experiment_type": "unsupervised_bertopic",
+  "source_text": "reason_for_recall",
+  "number_of_unique_narratives": 14617,
+  "embedding_model": "sentence-transformers/all-mpnet-base-v2",
+  "embedding_shape": [
+    14617,
+    768
+  ],
+  "umap": {
+    "n_neighbors": 15,
+    "n_components": 5,
+    "min_dist": 0.0,
+    "metric": "cosine",
+    "random_state": 42
+  },
+  "hdbscan": {
+    "min_cluster_size": 40,
+    "min_samples": 10,
+    "metric": "euclidean",
+    "cluster_selection_method": "eom",
+    "prediction_data": true
+  },
+  "vectorizer": {
+    "ngram_range": [
+      1,
+      2
+    ],
+    "min_df": 2,
+    "max_df": 0.95,
+    "max_features": 30000
+  },
+  "ctfidf": {
+    "reduce_frequent_words": true,
+    "bm25_weighting": false
+  },
+  "number_of_topics": 55,
+  "number_of_outliers": 5988,
+  "outlier_fraction": 0.40965998494903194,
+  "cosine_silhouette": 0.07071422040462494,
+  "reduced_space_silhouette": 0.49359264969825745,
+  "topic_keyword_diversity": 0.9563636363636364,
+  "outlier_reassignment": {
+    "strategy": "embeddings",
+    "threshold": 0.63,
+    "number_of_topics_after_reassignment": 55,
+    "number_of_outliers_after_reassignment": 3807,
+    "outlier_fraction_after_reassignment": 0.2604501607717042
+  },
+  "package_versions": {
+    "bertopic": "0.17.4",
+    "umap-learn": "0.5.12",
+    "hdbscan": "0.8.44",
+    "sentence-transformers": "5.6.1",
+    "scikit-learn": "1.9.0",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3"
+  }
+}

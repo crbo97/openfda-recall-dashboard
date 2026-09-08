@@ -1,0 +1,10 @@
+{
+  "expected_figures": 8,
+  "png_files_verified": 8,
+  "pdf_files_verified": 8,
+  "nonblank_figures_verified": 8,
+  "semantic_map_documents": 14617,
+  "sensitivity_topic": 7,
+  "sensitivity_topic_label": "Product label, carton, and patient-label mix-ups",
+  "visualisation_changes_analytical_results": false
+}

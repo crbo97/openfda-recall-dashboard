@@ -1,0 +1,57 @@
+topic,manual_label,present_in_current_model
+-1,Outlier / unassigned narrative,True
+0,Erroneous diagnostic and laboratory test results,True
+1,"Orthopedic implant sizing, packaging, and compatibility issues",True
+2,"Electrical, power supply, and thermal hazards",True
+3,Compromised sterile packaging barriers,True
+4,"Ventilation, breathing circuit, and oxygen delivery failures",True
+5,"Expiration date, shelf-life, and storage labeling errors",True
+6,"X-ray imaging, display, and radiation-control failures",True
+7,"Product label, carton, and patient-label mix-ups",True
+8,"Surgical blades, handles, welds, and instrument breakage",True
+9,Marketed without FDA clearance or authorization,True
+10,Medical imaging software and PACS/DICOM study errors,True
+11,"Patient lifts, tables, and support-structure fall hazards",True
+12,Sterility assurance and sterilization validation failures,True
+13,Radiation dose calculation and treatment planning errors,True
+14,"Luer, tube, and connector leakage/disconnection",True
+15,"Needles, syringes, and injection device defects",True
+16,"Battery depletion, charging, and power loss hazards",True
+17,"Infusion pump flow, alarm, and therapy interruption failures",True
+18,Defibrillator and pacemaker therapy failures,True
+19,"Particulate, residue, and microbial contamination",True
+20,"Insulin pump, glucose app, and diabetes therapy failures",True
+21,"Patient monitor display, alarm, and communication failures",True
+22,"Laser safety, output, and regulatory compliance failures",True
+23,Microbiology culture and antimicrobial susceptibility test failures,True
+24,"Orthopedic screw sizing, packaging, and labeling errors",True
+25,"Catheter tip, shaft, and coating defects",True
+26,"Catheter size, packaging, and labeling mix-ups",True
+27,"Reusable device cleaning, disinfection, and sterilization IFUs",True
+28,Imaging and operating table motion/support failures,True
+29,"General software defects, updates, and cybersecurity vulnerabilities",True
+30,Device labeling and IFU documentation errors,True
+31,"Perfusion, blood pump, and fluid flow-control failures",True
+32,Latex labeling and allergy-warning omissions,True
+33,Catheter balloon and inflation system defects,True
+34,"Surgical drill, guide, and burr hardware defects",True
+35,"COVID, respiratory virus, and infectious disease test failures",True
+36,Neurostimulation and implanted programmer/communication failures,True
+37,"Ophthalmic lens power, labeling, and optical defects",True
+38,"Endoscope cleaning, reprocessing, and channel defects",True
+39,"Hematology, coagulation, and blood collection test errors",True
+40,"X-ray gantry, detector, and collimator mechanical hazards",True
+41,"Quality-system, manufacturing-control, and compliance failures",True
+42,Kits and trays containing recalled or non-sterile components,True
+43,"Size, dimension, and length labeling errors",True
+44,"ECG waveform, cable, and cardiac-monitoring failures",True
+45,"Stent, stent-graft, and deployment system failures",True
+46,"Orthopedic set screw, thread, and locking failures",True
+47,"Hospital bed, stretcher, and patient fall hazards",True
+48,"Blood pressure, SpO2, and vital-sign monitoring errors",True
+49,"Bacterial endotoxin, pyrogen, and bioburden contamination",True
+50,Storage-temperature and cold-chain excursions,True
+51,Monitor suspension and mounting hardware failures,True
+52,"Barcode, UDI, and sample identification errors",True
+53,"Mixed manufacturer-specific device, labeling, and quality failures",True
+54,"Guidewire, lead-wire, cable, and coating defects",True

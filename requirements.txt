@@ -1,0 +1,13 @@
+streamlit>=1.32,<2
+plotly>=5.18,<7
+pandas>=2.0,<3
+numpy>=1.26,<3
+pyarrow>=14,<27
+sentence-transformers>=5.0,<6
+bertopic>=0.17,<0.18
+umap-learn>=0.5,<0.6
+hdbscan>=0.8,<0.9
+scikit-learn>=1.7,<2
+matplotlib>=3.9,<4
+requests>=2.31,<3
+torch>=2.2,<3
