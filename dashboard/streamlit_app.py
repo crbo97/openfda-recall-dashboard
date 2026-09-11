@@ -28,6 +28,7 @@ st.set_page_config(page_title="FDA Medical Device Recall Topic Explorer", layout
 string_app_dir = Path(__file__).resolve().parent
 string_dashboard_source_code_path = Path(__file__).resolve()
 string_default_project_root = string_app_dir.parent
+boolean_show_source_code = False
 
 EXPERIMENT_SCHEMA_VERSION = 1
 EXPERIMENT_MANIFEST_FILE = "experiment_manifest.json"
@@ -2655,15 +2656,18 @@ def build_experiment_pdf_report(string_experiment_name, dictionary_metadata, dat
 
 st.markdown('<div style="background-color:#0f766e;color:white;padding:0.85rem 1rem;border-radius:8px;font-weight:700;font-size:1rem;margin-bottom:1rem;">openFDA Project by Carlos Barquero, University of Bath | Masters Dissertation 2026</div>', unsafe_allow_html=True)
 
-object_title_column, object_source_code_button_column = st.columns([5, 1])
+if boolean_show_source_code:
+    object_title_column, object_source_code_button_column = st.columns([5, 1])
 
-with object_title_column:
+    with object_title_column:
+        st.title("FDA Medical Device Recall Failure-Pattern Explorer")
+
+    with object_source_code_button_column:
+        st.write("")
+        if st.button("Source code", width="stretch"):
+            st.session_state["dashboard_mode_selector"] = "Source Code"
+else:
     st.title("FDA Medical Device Recall Failure-Pattern Explorer")
-
-with object_source_code_button_column:
-    st.write("")
-    if st.button("Source code", width="stretch"):
-        st.session_state["dashboard_mode_selector"] = "Source Code"
 
 st.write("Explore discovered failure patterns and search for semantically similar historical FDA recall narratives.")
 
@@ -2682,9 +2686,16 @@ if integer_number_missing_labels > 0:
 
 st.sidebar.header("Explorer")
 
+list_dashboard_mode_options = ["Topic Explorer", "Semantic Recall Search", "Data Generation", "Experiment Upload", "Report Generator"]
+
+if boolean_show_source_code:
+    list_dashboard_mode_options.append("Source Code")
+elif st.session_state.get("dashboard_mode_selector") == "Source Code":
+    st.session_state["dashboard_mode_selector"] = "Topic Explorer"
+
 string_selected_explorer = st.sidebar.radio(
     "Dashboard mode",
-    options=["Topic Explorer", "Semantic Recall Search", "Data Generation", "Experiment Upload", "Report Generator", "Source Code"],
+    options=list_dashboard_mode_options,
     key="dashboard_mode_selector",
 )
 
@@ -3701,7 +3712,7 @@ elif string_selected_explorer == "Report Generator":
         object_app_logger.exception("Report inputs could not be loaded.")
         st.error("An error occurred. Please try again.")
 
-elif string_selected_explorer == "Source Code":
+elif boolean_show_source_code and string_selected_explorer == "Source Code":
     st.header("Source Code")
     st.write("This screen displays the Python source code for the Streamlit dashboard currently running this app.")
     st.caption(f"Source file: {string_dashboard_source_code_path}")
